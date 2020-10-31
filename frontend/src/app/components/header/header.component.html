@@ -1,0 +1,7 @@
+<header>
+  <h1>Initiation Node.js</h1>
+  <app-login *ngIf="!authenticationService.isLogged()"></app-login>
+  <button class="logout" mat-button *ngIf="authenticationService.isLogged()" (click)="authenticationService.logout()">
+    logout
+  </button>
+</header>

@@ -1,0 +1,7 @@
+<main>
+    <div *ngIf="authenticationService.isLogged()" class="content">
+        <p class="welcome-text">Salut <span class="username">{{ getUsername() }}</span> !</p>
+        <p class="token">{{ getToken() }}</p>
+    </div>
+
+</main>
